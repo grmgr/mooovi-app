@@ -24,18 +24,8 @@ Railsのカリキュラム学習にて作成しました。
 |email|string|null: false|
 |password|string|null: false|
 |nickname|string|index: true|
-|image
 ### Association
-- has_many :comment
-
-## products
-|Column|Type|Options|
-|------|----|-------|
-|title|||
-|image_url|||
-|director|||
-|detail|||
-### Association
+- has_many :reviews
 
 ## reviews
 |Column|Type|Options|
@@ -45,6 +35,18 @@ Railsのカリキュラム学習にて作成しました。
 |prodct_id|||
 |user_id|||
 ### Association
+bilongs_to :user
+bilongs_to :product
+
+## products
+|Column|Type|Options|
+|------|----|-------|
+|title|||
+|image_url|||
+|director|||
+|detail|||
+### Association
+- has_many :reviews
 
 ## ar_internal_metadata
 |Column|Type|Options|
@@ -69,5 +71,5 @@ Railsのカリキュラム学習にて作成しました。
 
 ## 感想
 作成二つ目のrailsアプリケーション。
-どんなアプリケーションでも必要になりそうなメソッドが多く、データの取得に使うメソッドは把握しておきたいと思った。
+どんなアプリケーションでも必要になりそうなメソッドが多く、データの取得に使うメソッドは把握しておきたいと思う。
 （完成：2019.08.)
