@@ -1,5 +1,4 @@
-mooovi
-======
+# mooovi
 
 ## 概要
 Railsのカリキュラム学習にて作成しました。
@@ -16,8 +15,57 @@ Railsのカリキュラム学習にて作成しました。
 ## サンプル画像
 [![Image from Gyazo](https://i.gyazo.com/dd0a567b9dd2d0ade37bdb9a07995c8e.gif)](https://gyazo.com/dd0a567b9dd2d0ade37bdb9a07995c8e)
 
-## DB設計
+# DB設計
+//TODO:DB設計完成
 
+## users
+|Column|Type|Options|
+|------|----|-------|
+|email|string|null: false|
+|password|string|null: false|
+|nickname|string|index: true|
+|image
+### Association
+- has_many :comment
+
+## products
+|Column|Type|Options|
+|------|----|-------|
+|title|||
+|image_url|||
+|director|||
+|detail|||
+### Association
+
+## reviews
+|Column|Type|Options|
+|------|----|-------|
+|rate|||
+|review|||
+|prodct_id|||
+|user_id|||
+### Association
+
+## ar_internal_metadata
+|Column|Type|Options|
+|------|----|-------|
+|key|||
+|value|||
+
+## active_storage_blobs
+|Column|Type|Options|
+|------|----|-------|
+|key|||
+|filename|||
+|metadata|||
+
+## active_storage_attachments
+|Column|Type|Options|
+|------|----|-------|
+|name|||
+|record_type|||
+|record_id|||
+|blob_id|||
 
 ## 感想
 作成二つ目のrailsアプリケーション。
