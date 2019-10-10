@@ -7,13 +7,14 @@ Railsのカリキュラム学習にて作成しました。
 機能・学んだ点は下記の通りです。
 
 - ユーザー登録、ログイン機能
-- スクレイピングで情報表示
+- スクレイピングで作品情報表示
+- 作品検索機能
 - レビューの投稿
 - コメント機能
 - 評価（いいね）機能
 
 ## サンプル画像
-
+[![Image from Gyazo](https://i.gyazo.com/dd0a567b9dd2d0ade37bdb9a07995c8e.gif)](https://gyazo.com/dd0a567b9dd2d0ade37bdb9a07995c8e)
 
 ## DB設計
 
